@@ -10,7 +10,7 @@ namespace RunesAPITests.Controllers
     public class MedievalFuthorkControllerTest
     {
         [Fact]
-        public void Endpoint_Returns_Given_Content_In_Elder_Futhark_Runes()
+        public void Endpoint_Returns_Given_Content_In_Medieval_Futhork_Runes()
         {
             var controller = new MedievalFuthorkController(new RunesService());
 
