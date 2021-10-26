@@ -18,6 +18,7 @@ namespace RunesAPITests
         [Theory]
         [InlineData("/api/younger-futhark/lorem-ipsum")]
         [InlineData("/api/elder-futhark/lorem-ipsum")]
+        [InlineData("/api/medieval-futhork/lorem-ipsum")]
         public async Task Rune_Endpoints_Return_Success_And_Correct_Content_Type(string url)
         {
             var client = _factory.CreateClient();
@@ -52,6 +53,18 @@ namespace RunesAPITests
 
             // Expected body content.
             Assert.Equal("ᛚᛟᚱᛖᛗ-ᛁᛈᛋᚢᛗ",
+                response.Content.ReadAsStringAsync().Result);
+        }
+
+        [Fact]
+        public async Task Medieval_Futhork_Endpoint_Returns_Correct_Content()
+        {
+            var url = "/api/medieval-futhork/lorem-ipsum";
+            var client = _factory.CreateClient();
+            var response = await client.GetAsync(url);
+
+            // Expected body content.
+            Assert.Equal("ᛚᚮᚱᚽᛘ-ᛁᛕᛋᚢᛘ",
                 response.Content.ReadAsStringAsync().Result);
         }
     }
