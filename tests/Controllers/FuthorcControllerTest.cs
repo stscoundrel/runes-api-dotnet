@@ -10,7 +10,7 @@ namespace RunesAPITests.Controllers
     public class FuthorcControllerTest
     {
         [Fact]
-        public void Endpoint_Returns_Given_Content_In_Elder_Futhark_Runes()
+        public void Endpoint_Returns_Given_Content_In_Futhorc_Runes()
         {
             var controller = new FuthorcController(new RunesService());
 
