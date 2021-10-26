@@ -8,5 +8,6 @@ namespace RunesAPI.Services
     {
 
         public string ToYoungerFuthark(string content) => YoungerFuthark.LettersToRunes(content);
+        public string ToElderFuthark(string content) => ElderFuthark.LettersToRunes(content);
     }
 }
