@@ -6,5 +6,6 @@ namespace RunesAPI.Services
         public string ToYoungerFuthark(string content);
         public string ToElderFuthark(string content);
         public string ToMedievalFuthork(string content);
+        public string ToFuthorc(string content);
     }
 }
