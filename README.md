@@ -1,6 +1,8 @@
 # Runes API (.NET)
 
-.NET based API for transforming text to runes.
+.NET/ASP.NET based API for transforming text to runes.
+
+Depends on [Riimut](https://github.com/stscoundrel/riimut-cs) C# library.
 
 ### Run in docker
 
